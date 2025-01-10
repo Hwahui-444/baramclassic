@@ -12,14 +12,6 @@ import platform
 import sys
 import subprocess
 
-import os
-import sys
-import subprocess
-import pytesseract
-
-import os
-import pytesseract
-
 def check_tesseract_installed():
     # macOS에서는 일반적으로 /usr/local/bin/tesseract 경로에 설치됨
     tesseract_path = '/usr/local/bin/tesseract'
@@ -47,7 +39,7 @@ def install_tesseract():
 
     try:
         print("Homebrew를 사용하여 Tesseract를 설치합니다...")
-        # subprocess.run(['brew', 'install', 'tesseract'], check=True)
+        ## subprocess.run(['brew', 'install', 'tesseract'], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Tesseract 설치 중 오류 발생: {e}")
         return  # 설치 오류가 발생하면 중단
