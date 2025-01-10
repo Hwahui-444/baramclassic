@@ -25,10 +25,10 @@ jobs:
             ${{ runner.os }}-python-
 
       # 3. Python 설치 (x64 아키텍처 사용)
-      - name: Set up Python 3.10
+      - name: Set up Python 3.13.1
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
+          python-version: 3.13.1
           architecture: x64
 
       # 4. 필요한 의존성 설치
