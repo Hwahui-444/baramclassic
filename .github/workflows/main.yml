@@ -35,6 +35,10 @@ jobs:
       - name: Install dependencies
         run: |
           brew install python  # 필요한 의존성 설치
+          brew install tesseract  # pytesseract를 사용하려면 tesseract가 필요
+          pip install pytesseract  # pytesseract 설치
+          pip install pillow        # pytesseract와 함께 사용하는 이미지 처리 라이브러리 설치
+          pip install opencv-python # OpenCV가 필요하면 설치
 
       # 5. 프로그램 빌드
       - name: Build application
