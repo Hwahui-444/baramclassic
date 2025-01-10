@@ -40,8 +40,8 @@ jobs:
           pip install opencv-python # OpenCV가 필요하면 설치
 
       - name: Install Tesseract with Korean language support
-      run: |
-        brew install tesseract-lang
+        run: |
+          brew install tesseract-lang
 
       # 5. 프로그램 빌드
       - name: Build application
