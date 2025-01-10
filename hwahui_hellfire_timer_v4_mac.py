@@ -47,7 +47,7 @@ def install_tesseract():
 
     try:
         print("Homebrew를 사용하여 Tesseract를 설치합니다...")
-        subprocess.run(['brew', 'install', 'tesseract'], check=True)
+        # subprocess.run(['brew', 'install', 'tesseract'], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Tesseract 설치 중 오류 발생: {e}")
         return  # 설치 오류가 발생하면 중단
